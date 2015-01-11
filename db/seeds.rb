@@ -15,8 +15,8 @@ end
    good  = g[0]
    price = g[1]
    date = Date.parse(getRandom DATE)
-   puts "#{city}, #{good}, #{price}, #{date}"
-   #Add code here to save the record to the database.
+   #puts "#{city}, #{good}, #{price}, #{date}"
+   Sale.create(:city=>city , :good=>good, :date=>date, :price=>price)
    
 end
 
