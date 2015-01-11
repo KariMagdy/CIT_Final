@@ -5,7 +5,6 @@ City:
   <% @all_cities.each do |city| %>
   <%= city %>
   <%= check_box_tag "cities[#{city}]","1", true ,:id => "cities_#{city}" %>
-  <%= hidden_tad "filter">
   <%end%>
   <%= submit_tag "filter", :id =>"filter"%>
 <% end %>

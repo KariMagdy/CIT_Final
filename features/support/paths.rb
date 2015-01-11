@@ -15,7 +15,8 @@ module NavigationHelpers
 
     when /^the home\s?page$/
       '/'
-		when /^index"$/i 
+      
+		when /^index$/i 
 	 		sales_path
 	 		
     else

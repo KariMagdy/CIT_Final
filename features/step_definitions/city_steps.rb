@@ -10,15 +10,16 @@ When /^(?:|I )go to (.+)$/ do |page_name|
   visit path_to(page_name)
 end
 
-When /^(?:|I )check "([^"]*)"$/ do |field|
-  check(field)
+When(/^I check Alex$/) do
+  check("cities_Alex")
 end
 
-When /^(?:|I )press "([^"]*)"$/ do |button|
+
+And /^(?:|I )press "([^"]*)"$/ do |button|
   click_button(button)
 end
 
 Then(/^the list should contain only Alex$/) do
-  #count == 2
+  page.has_css?("table.sales td", :count => 2)
 end
 
