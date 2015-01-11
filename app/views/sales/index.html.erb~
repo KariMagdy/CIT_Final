@@ -9,7 +9,7 @@ City:
   <%= submit_tag "filter", :id =>"filter"%>
 <% end %>
 
-<table>
+<table class="sales">
   <tr>
     <th>Good</th>
     <th>Price</th>

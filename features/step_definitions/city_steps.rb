@@ -20,6 +20,6 @@ And /^(?:|I )press "([^"]*)"$/ do |button|
 end
 
 Then(/^the list should contain only Alex$/) do
-  page.has_css?("table.sales td", :count => 2)
+  page.has_css?("table tr", :count =>10)
 end
 
